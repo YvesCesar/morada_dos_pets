@@ -1,6 +1,6 @@
 name: RailsCI
 on: [push]
-
+  
 jobs:
   linters:
     name: Linters
@@ -27,6 +27,9 @@ jobs:
           bin/brakeman -q -w2
 
   tests:
+    env:
+      RAILS_DB_USERNAME: 'postgres'
+      RAILS_DB_PASSWORD: 'postgres'
     name: Tests
     runs-on: ubuntu-latest
     services:
