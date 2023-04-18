@@ -39,5 +39,8 @@ jobs:
         RAILS_ENV: test
       run: |
         bundle exec rspec spec/
-    - name: Check for security vulnerabilities
-      uses: rubysec/bundler-audit-action@v2.2.0
+    - name: Security check
+      run: |
+        gem install brakeman
+        brakeman -A -q --no-pager
+
