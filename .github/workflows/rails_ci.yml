@@ -20,7 +20,7 @@ jobs:
 
       - name: Run security checks
         run: |
-          bundle exec brakeman -q -w2
+          brakeman -q -w2
 
   tests:
     env:
