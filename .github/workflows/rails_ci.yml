@@ -16,7 +16,7 @@ jobs:
 
       - name: Run linters
         run: |
-          bin/rubocop --parallel
+          bundle exec rubocop --parallel
           bin/stylelint
           bin/prettier
           bin/eslint
@@ -46,16 +46,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: yarn
-
-      - name: Install packages
-        run: |
-          yarn install --pure-lockfile
 
       - name: Setup test database
         env:
