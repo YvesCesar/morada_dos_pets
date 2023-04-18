@@ -2,6 +2,11 @@ name: CI
 
 on: [push]
 
+env:
+  RAILS_DB_USERNAME: 'postgres'
+  RAILS_DB_PASSWORD: 'postgres'
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
