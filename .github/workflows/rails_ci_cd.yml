@@ -20,7 +20,7 @@ jobs:
 
       - name: Run security checks
         run: |
-          gem install brakeman
+          install brakeman
           brakeman -q -w2
 
   tests:
