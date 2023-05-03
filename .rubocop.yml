@@ -315,3 +315,6 @@ Minitest/UnreachableAssertion:
 
 Style/CommandLiteral:
   Enabled: false
+
+Layout/LineLength:
+  Max: 180
