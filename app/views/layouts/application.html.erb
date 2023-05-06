@@ -12,6 +12,13 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      Logado com o e-mail: <%= current_user.email %> <br>
+      <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Log in", new_user_session_path %> |
+      <%= link_to "Sign up", new_user_registration_path %>
+    <% end %>
     <main class="container mx-auto mt-28 px-5 flex">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
