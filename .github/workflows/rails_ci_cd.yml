@@ -52,6 +52,8 @@ jobs:
       - name: Setup test database
         env:
           RAILS_ENV: test
+          RAILS_DB_USERNAME: rails_github_actions
+          RAILS_DB_PASSWORD: rails_github_actions_test
           PGHOST: localhost
           PGUSER: myapp
           PGDATABASE: myapp_test
