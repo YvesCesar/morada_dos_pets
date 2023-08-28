@@ -25,15 +25,15 @@ jobs:
 
   tests:
     env:
-      RAILS_DB_USERNAME: 'postgres'
-      RAILS_DB_PASSWORD: 'postgres'
+      RAILS_DB_USERNAME: "postgres"
+      RAILS_DB_PASSWORD: "postgres"
     name: Tests
     runs-on: ubuntu-latest
     services:
       postgres:
         image: postgres:12.7
         env:
-          POSTGRES_USER: postgres
+          POSTGRES_USER: "postgres"
           POSTGRES_DB: myapp_test
           POSTGRES_PASSWORD: "postgres"
         ports: ["5432:5432"]
@@ -56,6 +56,10 @@ jobs:
           bin/rails db:setup
 
       - name: Run tests
+        env:
+          RAILS_ENV: test
+          PGHOST: localhost
+          PGUSER: myapp
         run: bundle exec rspec
   
   deploy:
