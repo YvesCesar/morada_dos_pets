@@ -24,21 +24,19 @@ jobs:
           brakeman -q -w2
 
   tests:
+    env:
+      RAILS_DB_USERNAME: 'postgres'
+      RAILS_DB_PASSWORD: 'postgres'
     name: Tests
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:11
+        image: postgres:12.7
         env:
-          POSTGRES_USER: rails_github_actions
-          POSTGRES_DB: rails_github_actions_test
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: postgres
+          POSTGRES_DB: myapp_test
+          POSTGRES_PASSWORD: "postgres"
         ports: ["5432:5432"]
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
 
     steps:
       - name: Checkout code
@@ -52,14 +50,10 @@ jobs:
       - name: Setup test database
         env:
           RAILS_ENV: test
-          RAILS_DB_USERNAME: rails_github_actions
-          RAILS_DB_PASSWORD: rails_github_actions_test
           PGHOST: localhost
           PGUSER: myapp
-          PGDATABASE: myapp_test
         run: |
           bin/rails db:setup
-          bin/rails db:migrate
 
       - name: Run tests
         run: bundle exec rspec
