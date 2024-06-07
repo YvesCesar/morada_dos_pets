@@ -8,10 +8,12 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <%= render "shared/navbar" %>
     <main class="container mx-auto px-5 flex">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
