@@ -1,14 +1,14 @@
 <nav class="bg-white shadow">
-    <div class="container mx-auto p-6 flex items-center justify-between">
+    <div class="container mx-auto p-4 flex items-center justify-between">
         <div class="flex items-center">
             <%= image_tag "Logo.png", class: "h-10 w-auto" %>
         </div>
 
-        <div class="hidden md:flex items-center space-x-4">
-            <a href="#" class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">Início</a>
-            <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-menu-indicator mx-1.5 sm:mx-6">Quem somos</a>
-            <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-menu-indicator mx-1.5 sm:mx-6">Serviços</a>
-            <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-menu-indicator mx-1.5 sm:mx-6">Contato</a>
+        <div class="hidden md:flex items-center space-x-10">
+            <a href="#" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-menu-indicator mx-1.5 sm:mx-6">Início</a>
+            <a href="#" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-menu-indicator mx-1.5 sm:mx-6">Quem somos</a>
+            <a href="#" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-menu-indicator mx-1.5 sm:mx-6">Serviços</a>
+            <a href="#" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-menu-indicator mx-1.5 sm:mx-6">Contato</a>
         </div>
 
         <div class="flex items-center space-x-4">
@@ -22,16 +22,13 @@
     </div>
 </nav>
 
-<div class="relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10 h-[500pt]">
+<div class="relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10 h-[400pt]">
     <%= image_tag "Banner.jpg", class:"absolute inset-0 w-full h-full object-cover" %>
     <div class="min-h-[350px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
-    <h2 class="sm:text-4xl text-2xl font-bold mb-6">Onde a diversão e o cuidado andam juntos.</h2>
-    <p class="sm:text-lg text-base text-center text-gray-200">Embark on unforgettable journeys. Book your dream vacation today!</p>
+        <h2 class="sm:text-4xl text-2xl font-bold mb-6">Onde a diversão e o cuidado andam juntos.</h2>
 
-    <button
-        type="button"
-        class="mt-12 bg-transparent text-white text-base py-3 px-6 border border-white rounded-lg hover:bg-white hover:text-black transition duration-300">
-        Saiba mais
-    </button>
+        <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#291000] rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-[#291000] focus:ring-opacity-80">
+            Criar conta
+        </button>
     </div>
 </div>
