@@ -13,7 +13,7 @@ module.exports = {
         sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'menu-text': '#100D0D',
+        'default-brown': '#100D0D',
         'menu-indicator': '#291000'
       }
     },
