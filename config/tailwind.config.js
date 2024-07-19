@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         'default-brown': '#100D0D',
-        'menu-indicator': '#291000'
+        'background-brown': '#291000'
       }
     },
   },
