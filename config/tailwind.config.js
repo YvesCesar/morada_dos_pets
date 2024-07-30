@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         'default-brown': '#100D0D',
-        'background-brown': '#291000'
+        'background-brown': '#291000',
+        'background-white': '#FFFDF6'
       }
     },
   },
