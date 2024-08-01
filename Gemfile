@@ -93,3 +93,5 @@ gem "devise"
 
 # Fix netpop issue with ruby 3.3.3, link: https://stackoverflow.com/questions/78617432/strange-bundle-update-issue-disappearing-net-pop-0-1-2-dependency
 gem "net-pop", github: "ruby/net-pop"
+
+gem "view_component"

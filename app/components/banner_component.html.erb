@@ -1,0 +1,12 @@
+<div class="relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10 h-[400pt]" style="background-image: linear-gradient(180deg, rgba(41, 16, 0, 0.5) 0%, rgba(41, 16, 0, 0.5) 25%, rgba(41, 16, 0, 0.5) 50%, rgba(219, 185, 71, 0.5) 75%, rgba(217, 217, 217, 0) 100%), url('<%= image_path @image %>'); background-size: cover;">
+    <div class="min-h-[350px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
+        <div class="flex-grow"></div>
+        <h2 class="sm:text-4xl text-2xl w-full font-bold text-left"><%= @title.html_safe %></h2>
+        <div class="flex-grow"></div>
+        <% if @button_title %>
+            <button class="mb-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
+                <%= @button_title %>
+            </button>
+        <% end %>
+    </div>
+</div>
