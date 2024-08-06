@@ -4,46 +4,9 @@
   button_title: "Saiba mais", 
 )) %>
 
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <video controls class="object-cover object-center rounded w-full h-full">
-        <source src="https://videos.pexels.com/video-files/3023167/3023167-uhd_2560_1440_30fps.mp4" type="video/mp4" autoplay=true>
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-default-brown">Com a Morada dos Pets, seu <br>melhor amigo sente-se em casa</h1>
-      <p class="mb-8 leading-relaxed text-default-brown">Contamos com ambiente amplamente personalizado, para proporcionar experiências positivas aos nossos clientes.</p>
-    </div>
-  </div>
-</section>
+<%= render "initial_presentation" %>
 
-<section class="bg-background-white">
-    <div class="container px-6 py-12 mx-auto">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div class="flex flex-col items-center relative lg:border-r-2 lg:border-default-brown lg:pr-8">
-                <%= image_tag "EmployeeVector.png", class:"w-76 h-76" %>
-                <h1 class="mt-4 text-xl text-default-brown text-center">Equipe<br> especializada</h1>
-            </div>
-
-            <div class="flex flex-col items-center relative lg:border-r-2 lg:border-default-brown lg:pr-8">
-                <%= image_tag "CameraVector.png", class:"w-76 h-76" %>
-                <h1 class="mt-4 text-xl text-default-brown text-center">Segurança<br> 24 horas</h1>
-            </div>
-
-            <div class="flex flex-col items-center relative lg:border-r-2 lg:border-default-brown lg:pr-8">
-                <%= image_tag "PetPawVector.png", class:"w-76 h-76" %>
-                <h1 class="mt-4 text-xl text-default-brown text-center">Brinquedos<br> inspecionados</h1>
-            </div>
-
-            <div class="flex flex-col items-center relative">
-                <%= image_tag "PetActivityVector.png", class:"w-76 h-76" %>
-                <h1 class="mt-4 text-xl text-default-brown text-center">Ambiente<br> acolhedor</h1>
-            </div>
-        </div>
-    </div>
-</section>
+<%= render "differentiators" %>
 
 <div class="container px-5 pt-20 mx-auto">
     <div class="flex flex-col text-center w-full">
@@ -52,129 +15,10 @@
     </div>
 </div>
 
-<section class="text-white body-font">
-  <div class="w-full px-0 pt-24 mx-auto">
-    <div class="flex flex-wrap h-[415.5pt]">
-      <div class="w-full lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-48 pb-24 flex flex-col justify-center items-center text-center relative group" style="background-image: linear-gradient(180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%), url('<%= image_path "DogSpa.jpg" %>'); background-size: cover;">
-          <h1 class="title-font sm:text-2xl text-xl font-semibold text-white mb-3 transition-all duration-300 group-hover:mb-5 group-hover:mt-0 group-hover:translate-y-[-30px]">Dog Spa</h1>
-          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p class="leading-relaxed mb-3 font-medium">Oferecemos tratamentos de spa personalizados, tosas profissionais e cuidados de alta qualidade para deixar seu cão relaxado.</p>
-            <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
-              Saiba mais
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-48 pb-24 flex flex-col justify-center items-center text-center relative group" style="background-image: linear-gradient(180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%), url('<%= image_path "DogAccommodation.jpg" %>'); background-size: cover;">
-          <h1 class="title-font sm:text-2xl text-xl font-semibold text-white mb-3 transition-all duration-300 group-hover:mb-5 group-hover:mt-0 group-hover:translate-y-[-30px]">Hospedagem</h1>
-          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p class="leading-relaxed mb-3 font-medium">Proporcionamos conforto, diversão, garantindo que seu amigo de quatro patas tenha uma estadia feliz e tranquila enquanto você estiver ausente.</p>
-            <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
-              Saiba mais
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-48 pb-24 flex flex-col justify-center items-center text-center relative group" style="background-image: linear-gradient(180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%), url('<%= image_path "DogTaxi.jpg" %>'); background-size: cover;">
-          <h1 class="title-font sm:text-2xl text-xl font-semibold text-white mb-3 transition-all duration-300 group-hover:mb-5 group-hover:mt-0 group-hover:translate-y-[-30px]">Dog Táxi</h1>
-          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p class="leading-relaxed mb-3 font-medium h-[58.5pt]">Transporte seguro e confiável, garantindo viagens confortáveis.</p>
-            <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
-              Saiba mais
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<%= render "shared/product_services_cards" %>
 
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-10 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-        Venha fazer parte da Morada<br> dos Pets também!
-      </h1>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <%= image_tag "DogRunToDoor.png", class:"object-cover object-center rounded" %>
-    </div>
-  </div>
-</section>
+<%= render "invite_presentation" %>
 
-<section class="bg-background-brown">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <div class="mx-auto max-w-screen-md sm:text-center">
-      <h2 class="mb-4 text-3xl tracking-tight font-medium sm:text-4xl text-white">Cadastre-se em nossa newsletter</h2>
-      <form action="#">
-        <div class="items-center mx-auto mb-3 mt-8 space-y-4 max-w-screen-sm sm:flex sm:space-y-0 sm:space-x-4">
-          <div class="relative w-full">
-            <label for="email" class="hidden mb-2 text-sm font-medium text-black">E-mail</label>
-            <input class="block p-3 pl-5 w-full text-sm text-gray-900 bg-white rounded-r-lg rounded-l-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 placeholder-black" placeholder="E-mail" type="email" id="email" required="">
-          </div>
-          <div>
-            <button type="submit" class="flex items-center justify-center py-3 px-5 w-full text-sm font-medium text-center text-gray-900 rounded-r-lg rounded-l-lg border cursor-pointer bg-white border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 dark:focus:ring-gray-800">
-              <%= image_tag "SubmitButtonVector.png", class:"w-5 h-5" %>
-            </button>
-          </div>
-        </div>
-      </form>
-      <p class="mx-auto mt-10 max-w-2xl font-light text-white sm:text-xl">Receba conteúdos exclusivos e novidades sobre a Morada dos Pets em primeira mão</p>
-    </div>
-  </div>
-</section>
+<%= render "newsletter" %>
 
-<footer class="bg-white mt-10">
-    <div class="container p-6 mx-auto">
-        <div class="lg:flex lg:justify-center">
-            <div class="w-full -mx-6 lg:w-2/5 lg:text-center">
-                <div class="px-6">
-                    <a href="/" class="w-auto h-7 inline-block">
-                        <%= image_tag "Logo.png", class: "h-10 w-auto" %>
-                    </a>
-
-                    <p class="max-w-sm mt-5 mx-auto">Siga nas redes sociais</p>
-
-                    <div class="flex justify-center mt-6 -mx-2">
-                        <a href="https://www.instagram.com/" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Instagram">
-                            <%= image_tag "InstagramIcon.svg", class: "w-10 h-10 fill-current" %>
-                        </a>
-
-                        <a href="https://www.facebook.com/" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
-                            <%= image_tag "FacebookIcon.svg", class: "w-10 h-10 fill-current" %>
-                        </a>
-
-                        <a href="https://www.tiktok.com/" target="_blank" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="TikTok">
-                            <%= image_tag "TiktokIcon.svg", class: "w-10 h-10 fill-current" %>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-6 lg:mt-0">
-                <div class="grid grid-cols-2 gap-6 lg:justify-center lg:mx-auto w-96">
-                    <div>
-                        <h3 class="font-medium">Menu</h3>
-                        <a href="/" class="block mt-2 font-normal">Início</a>
-                        <a href="#" class="block mt-2 font-normal">Quem somos</a>
-                        <a href="#" class="block mt-2 font-normal">Serviços</a>
-                        <a href="#" class="block mt-2 font-normal">Contato</a>
-                    </div>
-
-                    <div>
-                        <h3 class="font-medium">Endereços</h3>
-                        <p class="block mt-2 font-normal">Rua Holanda, n° 125, Horizonte - AM</p>
-                        <p href="#" class="block mt-2 font-normal">Av. Flores, n° 86, São Bernardo - AM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-10">
-            <p class="text-center">© Morada Dos Pets 2024 - Todos os direitos reservados</p>
-        </div>
-    </div>
-</footer>
+<%= render "shared/footer" %>
