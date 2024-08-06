@@ -4,7 +4,7 @@
             <%= image_tag "Logo.png", class: "h-10 w-auto" %>
         </a>
 
-        <div class="flex items-center space-x-10">
+        <div id="menu-links" class="flex items-center space-x-10">
             <div class="hidden md:flex items-center space-x-10">
                 <a href="/" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
                     Início
@@ -24,7 +24,7 @@
                 </a>
             </div>
 
-            <div class="flex items-center space-x-4">
+            <div id="auth-links" class="hidden md:flex items-center space-x-4">
                 <% if user_signed_in? %>
                     <%= button_to "Sair", destroy_user_session_path, method: :delete %>
                 <% else %>
@@ -32,6 +32,41 @@
                     <%= link_to "Criar conta", new_user_registration_path, class: "px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80" %>
                 <% end %>
             </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div class="p-4 space-y-4">
+            <a href="/" class="block">Início</a>
+            <a href="#" class="block">Quem somos</a>
+            <a href="#" class="block">Serviços</a>
+            <a href="#" class="block">Contato</a>
+            <% if user_signed_in? %>
+                <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "block w-full text-left" %>
+            <% else %>
+                <%= link_to "Entrar", new_user_session_path, class: "block px-6 py-2 font-medium tracking-wide capitalize transition-colors duration-300 transform bg-white border-background-brown rounded-[6px] hover:bg-background-brown hover:text-white focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80" %>
+                <%= link_to "Criar conta", new_user_registration_path, class: "block px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80" %>
+            <% end %>
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.getElementById('menu-btn');
+        const menuLinks = document.getElementById('menu-links');
+        const authLinks = document.getElementById('auth-links');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+</script>
