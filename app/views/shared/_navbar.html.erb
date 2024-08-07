@@ -49,10 +49,9 @@
             <a href="#" class="block">Serviços</a>
             <a href="#" class="block">Contato</a>
             <% if user_signed_in? %>
-                <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "block w-full text-left" %>
+                <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "block px-6 py-2 text-center font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80" %>
             <% else %>
-                <%= link_to "Entrar", new_user_session_path, class: "block px-6 py-2 font-medium tracking-wide capitalize transition-colors duration-300 transform bg-white border-background-brown rounded-[6px] hover:bg-background-brown hover:text-white focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80" %>
-                <%= link_to "Criar conta", new_user_registration_path, class: "block px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80" %>
+                <%= link_to "Entrar", new_user_session_path, class: "block px-6 py-2 text-center font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80" %>
             <% end %>
         </div>
     </div>
