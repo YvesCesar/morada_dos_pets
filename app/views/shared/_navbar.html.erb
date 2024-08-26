@@ -5,7 +5,7 @@
         </a>
 
         <div id="menu-links" class="flex items-center space-x-10">
-            <div class="hidden md:flex items-center space-x-10">
+            <div class="hidden lg:flex items-center space-x-10">
                 <a href="/" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
                     Início
                     <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
@@ -24,7 +24,7 @@
                 </a>
             </div>
 
-            <div id="auth-links" class="hidden md:flex items-center space-x-4">
+            <div id="auth-links" class="hidden lg:flex items-center space-x-4">
                 <% if user_signed_in? %>
                     <%= button_to "Sair", destroy_user_session_path, method: :delete %>
                 <% else %>
@@ -33,17 +33,16 @@
                 <% end %>
             </div>
 
-            <div class="md:hidden flex items-center">
+            <div class="lg:hidden flex items-center">
                 <button data-action="click->mobile-menu#toggle" data-mobile-menu-target="menuIcon" class="focus:outline-none">
                     <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
-
         </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden" data-mobile-menu-target="mobileMenu">
+    <div id="mobile-menu" class="hidden lg:hidden" data-mobile-menu-target="mobileMenu">
         <div class="p-4 space-y-6 mx-5">
             <a href="/" class="block">Início</a>
             <a href="#" class="block">Quem somos</a>
