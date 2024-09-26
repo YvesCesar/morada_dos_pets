@@ -21,4 +21,24 @@
         url('Banner.jpg');
     background-position: 50% 50%;
 }
- 
+
+.dogSpa {
+    background-image: linear-gradient(
+        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
+        url('DogSpa.jpg');
+    background-size: cover;
+}
+
+.dogAccommodation {
+    background-image: linear-gradient(
+        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
+        url('DogAccommodation.jpg');
+    background-size: cover;
+}
+
+.dogTaxi {
+    background-image: linear-gradient(
+        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
+        url('DogTaxi.jpg');
+    background-size: cover;
+}
