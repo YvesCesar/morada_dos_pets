@@ -8,17 +8,19 @@
             <div class="hidden lg:flex items-center space-x-10">
                 <a href="/" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
                     Início
-                    <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
+                    <span
+                        class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 <%= current_page?(root_path) ? 'scale-x-100' : 'scale-x-0' %> group-hover:scale-x-100">
+                    </span>
                 </a>
-                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
+                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group hover:font-normal">
                     Quem somos
                     <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
                 </a>
-                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
+                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group hover:font-normal">
                     Serviços
                     <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
                 </a>
-                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
+                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group hover:font-normal">
                     Contato
                     <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
                 </a>
