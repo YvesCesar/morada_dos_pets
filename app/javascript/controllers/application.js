@@ -11,20 +11,21 @@ document.addEventListener('turbo:load', () => {
   AOS.init({
     duration: 1200,
   });
+
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
 
 
 export { application }
-
-const swiper = new Swiper('.swiper', {
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
