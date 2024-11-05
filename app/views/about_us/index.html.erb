@@ -78,33 +78,38 @@
   </div>
 </section>
 
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="container px-6 py-10 mx-auto h-full">
+<div class="relative" id="testimonialsCarousel">
+  <h1 class="title-font text-2xl ml-40 pt-12 font-medium text-white">Veja o que os nossos clientes têm a dizer</h1>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container px-6 py-10 mx-auto h-full">
           <div class="lg:-mx-6 lg:flex lg:items-center justify-center h-full">
-              <%= image_tag "FirstDogTestmonial.jpeg", class: "object-cover object-center lg:w-[29.563rem] lg:mx-6 w-full lg:h-64 h-96 rounded-2xl" %>
+            <%= image_tag "FirstDogTestimonial.jpeg", class: "object-cover object-center lg:w-[29.563rem] lg:mx-6 w-full lg:h-64 h-96 rounded-2xl" %>
 
-              <div class="mt-8 lg:px-6 lg:mt-0">
-                <div class="max-w-lg text-white">
-                  <div class="text-8xl font-normal text-white/25 -mb-8">“</div>
-                  <p>
-                    Eu deixei meu cãozinho no hotel e fiquei muito satisfeita com o serviço prestado. Os funcionários foram super atenciosos e meu cachorro se divertiu muito durante todo o dia. Foi ótimo poder ter essa opção para cuidar do meu pet enquanto eu estava no trabalho. Recomendo!
-                  </p>
-                  <div class="text-8xl font-normal text-white/25 text-right -mb-8">”</div>
-                </div>
-                <p class="text-white">- Cley Celeste</p>
+            <div class="mt-8 lg:px-6 lg:mt-0">
+              <div class="max-w-lg text-white">
+                <div class="text-8xl font-normal text-white/25 -mb-8">“</div>
+                <p>
+                  Eu deixei meu cãozinho no hotel e fiquei muito satisfeita com o serviço prestado. Os funcionários foram super atenciosos e meu cachorro se divertiu muito durante todo o dia. Foi ótimo poder ter essa opção para cuidar do meu pet enquanto eu estava no trabalho. Recomendo!
+                </p>
+                <div class="text-8xl font-normal text-white/25 text-right -mb-8">”</div>
               </div>
+              <p class="text-white">- Cley Celeste</p>
+            </div>
           </div>
+        </div>
       </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
     </div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-  </div>
-  <div class="swiper-pagination"></div>
 
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </div>
+
 
 <%= render "shared/footer" %>
