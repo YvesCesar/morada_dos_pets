@@ -12,9 +12,9 @@
                         class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 <%= current_page?(root_path) ? 'scale-x-100' : 'scale-x-0' %> group-hover:scale-x-100">
                     </span>
                 </a>
-                <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
+                <a href="<%= about_us_path %>" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
                     Quem somos
-                    <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 group-hover:scale-x-100 scale-x-0"></span>
+                    <span class="absolute bottom-[-19.5pt] left-1/2 transform -translate-x-1/2 w-[108px] h-[6px] bg-background-brown rounded-full transition-transform duration-300 <%= current_page?(about_us_path) ? 'scale-x-100' : 'scale-x-0' %> group-hover:scale-x-100"></span>
                 </a>
                 <a href="#" class="relative border-b-2 border-transparent transition-colors duration-300 transform mx-1.5 sm:mx-6 group">
                     Serviços
@@ -47,7 +47,7 @@
     <div id="mobile-menu" class="hidden lg:hidden" data-mobile-menu-target="mobileMenu">
         <div class="p-4 space-y-6 mx-5">
             <a href="/" class="block">Início</a>
-            <a href="#" class="block">Quem somos</a>
+            <a href="<%= about_us_path %>" class="block">Quem somos</a>
             <a href="#" class="block">Serviços</a>
             <a href="#" class="block">Contato</a>
             <% if user_signed_in? %>
