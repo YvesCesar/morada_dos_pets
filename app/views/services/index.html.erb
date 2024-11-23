@@ -18,35 +18,46 @@
 
 <%= render "shared/product_services_cards" %>
 
-<section class="mt-10 mb-10 py-20 px-32 md:mt-5 md:mb-5 body-font">
+<section class="mt-10 mb-10 py-20 px-16 md:mt-5 md:mb-5 body-font">
   <div class="container mx-auto flex md:px-10 md:flex-row flex-col items-center w-full px-5">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center w-full">
-      <ol class="relative border-s border-dashed border-background-brown space-y-8">                  
-        <li class="mb-10 ms-6">            
-            <span class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white">
-                1
-            </span>
-            <h3 class="font-medium leading-tight">Confira os dias disponíveis</h3>
-            <p class="text-sm">Busque o melhor dia e o melhor horário</p>
-        </li>
-        <li class="mb-10 ms-6">
-            <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white">
-                2
-            </span>
-            <h3 class="font-medium leading-tight">Faça uma reserva</h3>
-            <p class="text-sm">Escolha o serviço desejado, selecione a data que melhor se encaixa na sua agenda e aguarde confirmação do nosso time</p>
-        </li>
-        <li class="ms-6">
-            <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white">
-                3
-            </span>
-            <h3 class="font-medium leading-tight">É chegada a hora de desfrutar ao máximo!</h3>
-            <p class="text-sm">Após a confirmação, aguarde pela data reservada. Estaremos ansiosos para recebê-los na Morada dos Pets</p>
-        </li>
-      </ol>
+    <div class="lg:flex-grow md:w-1/2 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center w-full">
+      <div class="flex items-center flex-col justify-center w-max">
+        <div class="flex items-center flex-col relative">
+          <div class="absolute top-0 left-full ml-4 w-80">
+            <p class="text-base font-semibold">Confira os dias disponíveis</p>
+            <h6 class="text-sm font-normal">Busque o melhor dia e o melhor horário</h6>
+          </div>
+          <div
+            class="font-semibold w-16 h-14 shrink-0 mx-[-1px] border-2 border-background-brown p-1.5 flex items-center justify-center rounded-lg">
+            1
+          </div>
+          <div class="w-[0.006rem] h-16 border border-default-brown border-dashed"></div>
+        </div>
+        <div class="flex items-center flex-col relative">
+          <div class="absolute top-0 left-full ml-4 w-80">
+            <p class="text-base font-semibold">Faça uma reserva</p>
+            <h6 class="text-sm font-normal">Escolha o serviço desejado, selecione a data que melhor se encaixa na sua agenda e aguarde confirmação do nosso time</h6>
+          </div>
+          <div
+            class="font-semibold w-16 h-14 shrink-0 mx-[-1px] border-2 border-background-brown p-1.5 flex items-center justify-center rounded-lg">
+            2
+          </div>
+          <div class="w-[0.006rem] h-16 border border-default-brown border-dashed"></div>
+        </div>
+        <div class="flex items-center flex-col relative">
+          <div class="absolute top-0 left-full ml-4 w-80">
+            <p class="text-base font-semibold">É chegada a hora de desfrutar ao máximo!</p>
+            <h6 class="text-sm font-normal">Após a confirmação, aguarde pela data reservada. Estaremos ansiosos para recebê-los na Morada dos Pets</h6>
+          </div>
+          <div
+            class="font-semibold w-16 h-14 shrink-0 mx-[-1px] border-2 border-background-brown p-1.5 flex items-center justify-center rounded-lg">
+            3
+          </div>
+        </div>
+      </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <%= image_tag "DogServicesStep.png", class:"object-cover object-center rounded" %>
+      <%= image_tag "DogServicesStep.png", class:"object-cover object-center" %>
     </div>
   </div>
 </section>
