@@ -18,7 +18,7 @@
 
 <%= render "shared/product_services_cards" %>
 
-<section class="mt-10 mb-10 px-16 md:mt-5 md:mb-5 body-font">
+<section class="mt-10 py-20 mb-10 px-16 md:mt-5 md:mb-5 body-font">
   <div class="container mx-auto flex md:px-10 md:flex-row flex-col items-center w-full px-5">
     <div class="lg:flex-grow md:w-1/2 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center w-full">
       <div class="flex items-center flex-col justify-center w-max">
@@ -59,8 +59,15 @@
         </div>
       </div>
     </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-full pt-[6.25rem]">
-      <%= image_tag "DogServicesStep.png", class:"object-cover object-center" %>
+    <div class="w-full px-4">
+        <div>
+          <%= image_tag "DogServicesStep.png", class:"object-cover object-center" %>
+        </div>
+        <div class="">
+          <button class="mt-5 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
+            Ver no mapa
+          </button>
+        </div>
     </div>
   </div>
 </section>
