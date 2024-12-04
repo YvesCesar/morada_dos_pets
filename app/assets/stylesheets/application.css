@@ -66,10 +66,17 @@
     background-blend-mode: multiply;
 }
 
-.swiper {
+.testimonialsSwiper {
     width: 100%;
     height: 25rem;
     --swiper-navigation-color: white;
     --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.42);
     --swiper-pagination-color: white;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 25rem;
+    /* --swiper-navigation-color: white; */
 }
