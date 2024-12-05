@@ -12,7 +12,7 @@ document.addEventListener('turbo:load', () => {
     duration: 1200,
   });
 
-  const testimonialsCarousel = new Swiper('.testimonialsSwiper', {
+  const testimonialsCarousel = new Swiper('.testimonials', {
     loop: true,
   
     pagination: {
@@ -26,10 +26,11 @@ document.addEventListener('turbo:load', () => {
     },
   });
 
-  const ourDogUsersCarousel = new Swiper('.swiper', {
+  const ourDogUsersCarousel = new Swiper('.users', {
     loop: true,
     slidesPerView: 4,
     centeredSlides: true,
+    centerInsufficientSlides: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
