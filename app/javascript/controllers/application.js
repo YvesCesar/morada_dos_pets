@@ -28,13 +28,21 @@ document.addEventListener('turbo:load', () => {
 
   const ourDogUsersCarousel = new Swiper('.users', {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     centeredSlides: true,
     centerInsufficientSlides: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    }
   });
 });
 
