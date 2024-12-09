@@ -31,6 +31,14 @@
     background-position: 50% 50%;
 }
 
+.bannerContent.services {
+    background-size: cover;
+    background-image: linear-gradient(
+        180deg, rgba(86, 86, 86, 0.8) 3.85%, rgba(91, 91, 91, 0.76707) 3.86%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
+        url('ServicesPageBanner.jpg');
+    background-position: 50% 50%;
+}
+
 .dogSpa {
     background-image: linear-gradient(
         180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
@@ -58,10 +66,21 @@
     background-blend-mode: multiply;
 }
 
-.swiper {
+.testimonials {
     width: 100%;
     height: 25rem;
     --swiper-navigation-color: white;
     --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.42);
     --swiper-pagination-color: white;
+}
+
+
+.users {
+    --swiper-navigation-color: white;
+    .swiper-slide {
+        height: 18rem;
+    }
+    .swiper-slide:hover {
+        height: 20rem;
+    }
 }

@@ -12,7 +12,7 @@ document.addEventListener('turbo:load', () => {
     duration: 1200,
   });
 
-  const swiper = new Swiper('.swiper', {
+  const testimonialsCarousel = new Swiper('.testimonials', {
     loop: true,
   
     pagination: {
@@ -24,6 +24,25 @@ document.addEventListener('turbo:load', () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+
+  const ourDogUsersCarousel = new Swiper('.users', {
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    centerInsufficientSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    }
   });
 });
 
