@@ -13,74 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css');
-
-.bannerContent.home {
-    background-size: cover;
-    background-image: linear-gradient(
-        180deg, rgba(41, 16, 0, 0.5) 0%, rgba(41, 16, 0, 0.5) 25%, rgba(41, 16, 0, 0.5) 50%, rgba(219, 185, 71, 0.5) 75%, rgba(217, 217, 217, 0) 100%),
-        url('HomepageBanner.jpg');
-    background-position: 50% 50%;
-}
-
-.bannerContent.aboutUs {
-    background-size: cover;
-    background-image: linear-gradient(
-        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
-        url('AboutUsBanner.jpg');
-    background-position: 50% 50%;
-}
-
-.bannerContent.services {
-    background-size: cover;
-    background-image: linear-gradient(
-        180deg, rgba(86, 86, 86, 0.8) 3.85%, rgba(91, 91, 91, 0.76707) 3.86%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
-        url('ServicesPageBanner.jpg');
-    background-position: 50% 50%;
-}
-
-.dogSpa {
-    background-image: linear-gradient(
-        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
-        url('DogSpa.jpg');
-    background-size: cover;
-}
-
-.dogAccommodation {
-    background-image: linear-gradient(
-        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
-        url('DogAccommodation.jpg');
-    background-size: cover;
-}
-
-.dogTaxi {
-    background-image: linear-gradient(
-        180deg, rgba(91, 91, 91, 0.76707) 0.54%, rgba(86, 86, 86, 0.8) 3.85%, rgba(10, 9, 9, 0.536094) 40.82%, rgba(113, 110, 110, 0.573496) 75.06%, rgba(217, 217, 217, 0) 100%),
-        url('DogTaxi.jpg');
-    background-size: cover;
-}
-
-#testimonialsCarousel
-{
-    background: linear-gradient(180deg, #291000 1.12%, rgba(41, 16, 0, 0.91) 92.62%);
-    background-blend-mode: multiply;
-}
-
-.testimonials {
-    width: 100%;
-    height: 25rem;
-    --swiper-navigation-color: white;
-    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.42);
-    --swiper-pagination-color: white;
-}
-
-
-.users {
-    --swiper-navigation-color: white;
-    .swiper-slide {
-        height: 18rem;
-    }
-    .swiper-slide:hover {
-        height: 20rem;
-    }
-}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css');
+@import "banner.css";
+@import "services_cards.css";
+@import "carousels.css";
