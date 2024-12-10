@@ -1,22 +1,27 @@
-# fly.toml app configuration file generated for moradadospets2 on 2023-09-11T20:37:50-04:00
+# fly.toml app configuration file generated for moradadospets2-solitary-morning-4148 on 2024-12-09T20:19:47-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "moradadospets2"
-primary_region = "gru"
-console_command = "/rails/bin/rails console"
+app = 'moradadospets2-solitary-morning-4148'
+primary_region = 'gru'
+console_command = '/rails/bin/rails console'
 
 [build]
 
 [http_service]
   internal_port = 3000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
 
 [[statics]]
-  guest_path = "/rails/public"
-  url_prefix = "/"
+  guest_path = '/rails/public'
+  url_prefix = '/'
