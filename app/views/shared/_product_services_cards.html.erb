@@ -6,9 +6,11 @@
           <h1 class="title-font sm:text-2xl text-xl font-semibold text-white mb-3 transition-all duration-300 group-hover:mb-5 group-hover:mt-0 group-hover:translate-y-[-30px]">Dog Spa</h1>
           <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p class="leading-relaxed mb-3 font-medium">Oferecemos tratamentos de spa personalizados, tosas profissionais e cuidados de alta qualidade para deixar seu cão relaxado.</p>
-            <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
-              <%= link_to "Saiba mais", dog_spa_path%>
-            </button>
+            <a href="<%= dog_spa_path %>">
+              <button class="mt-12 px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-background-brown rounded-[6px] hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-background-brown focus:ring-opacity-80">
+                Saiba mais
+              </button>
+            </a>
           </div>
         </div>
       </div>
