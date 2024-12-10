@@ -61,15 +61,3 @@ jobs:
           PGHOST: localhost
           PGUSER: myapp
         run: bundle exec rspec
-  
-  deploy:
-    name: Deploy app
-    if: github.ref == 'refs/heads/main'
-    needs: [linters, tests]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
