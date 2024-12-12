@@ -5,16 +5,50 @@
 )) %>
 
 <section>
-    <div class="container mx-auto md:mr-0 px-5 md:pl-5 md:pr-0 py-24">
-    <div class="lg:pr-24 md:pr-16 text-left mb-16 md:mb-0 w-full">
-        <h1 class="title-font text-xl md:text-3xl mb-4 font-medium text-default-brown w-full">Seu cão precisa de um dia no spa?</h1>
-        <br>
-        <p class="mb-8 leading-relaxed">
-            A Morada dos Pets possui um luxuoso Dog Spa, onde seu fiel companheiro pode desfrutar de momentos de puro relaxamento e mimos especiais.
-        </p>
-        <p class="mb-8 leading-relaxed">
-        Oferecemos serviços como:
-        </p>
+    <div class="container mx-auto md:mr-0 px-5 md:pl-5 md:pr-0 pt-24">
+        <div class="lg:pr-24 md:pr-16 text-left mb-16 md:mb-0 w-full">
+            <h1 class="title-font text-xl md:text-3xl mb-4 font-medium text-default-brown w-full">Seu cão precisa de um dia no spa?</h1>
+            <br>
+            <p class="mb-8 leading-relaxed">
+                A Morada dos Pets possui um luxuoso Dog Spa, onde seu fiel companheiro pode desfrutar de momentos de puro relaxamento e mimos especiais.
+            </p>
+            <p class="mb-8 leading-relaxed">
+            Oferecemos serviços como:
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="body-font">
+  <div class="container px-5 pb-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full rounded-lg overflow-hidden shadow-price-cards">
+          <%= image_tag "BathIcon.jpeg", class:"lg:h-48 md:h-36 w-full object-cover object-center rounded-b-lg" %>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-black mb-3">Banho</h1>
+            <p class="leading-relaxed mb-3 text-black">Limpeza dos ouvidos, shampoo, condicionador, toalha esterilizada</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full rounded-lg overflow-hidden shadow-price-cards">
+          <%= image_tag "GroomingIcon.jpeg", class:"lg:h-48 md:h-36 w-full object-cover object-center rounded-b-lg" %>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-black mb-3">Tosa</h1>
+            <p class="leading-relaxed mb-3 text-black">Desde estilos tradicionais até cortes personalizados</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full rounded-lg overflow-hidden shadow-price-cards">
+          <%= image_tag "MassageSessionIcon.jpeg", class:"lg:h-48 md:h-36 w-full object-cover object-center rounded-b-lg" %>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-black mb-3">Sessão de massagem</h1>
+            <p class="leading-relaxed mb-3 text-black">Auxilia no alívio do estresse e da tensão muscular</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
