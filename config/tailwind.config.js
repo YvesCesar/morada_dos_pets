@@ -16,7 +16,8 @@ module.exports = {
       colors: {
         'default-brown': '#100D0D',
         'background-brown': '#291000',
-        'background-white': '#FFFDF6'
+        'background-white': '#FFFDF6',
+        'price-div': 'rgba(41, 16, 0, 0.55)'
       },
       boxShadow: {
         'price-cards': '0px 4px 4px rgba(0, 0, 0, 0.4)',
