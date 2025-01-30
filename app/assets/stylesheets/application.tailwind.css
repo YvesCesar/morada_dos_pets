@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css');
+@import "banner.css";
+@import "services_cards.css";
+@import "carousels.css";
 
 /*
 
